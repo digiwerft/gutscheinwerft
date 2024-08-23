@@ -12,7 +12,7 @@ composer require digiwerft/gutscheinwerft
 
 | Contao Version      | PHP Version |
 |---------------------|-------------|
-| \>= 4.13 || \>= 5.3 | ^8.2        |
+| \>= 4.13 \|\| \>= 5.3 | ^8.2        |
 
 ## Important note
 
