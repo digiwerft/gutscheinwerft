@@ -1,0 +1,19 @@
+services:
+  _defaults:
+    autowire: true # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  Digiwerft\Gutscheinwerft\DataContainer\GutscheinwerftCallback:
+    tags:
+      - {
+          name: contao.callback,
+          table: tl_content,
+          target: fields.gwShopCategories.options,
+          method: getCategories,
+        }
+      - {
+          name: contao.callback,
+          table: tl_content,
+          target: config.onload,
+          method: loadDataContainer,
+        }
