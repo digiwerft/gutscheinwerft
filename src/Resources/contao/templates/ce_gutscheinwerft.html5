@@ -1,0 +1,14 @@
+<?php
+$categories = $this->gwShopCategories ? ' categories="' . implode(",", $this->gwShopCategories) . '"' : '';
+if ($this->gwDevShop) {
+    $url = 'https://gw.server.gutscheinwerft.de/load.js';
+} else {
+    $url = 'https://gw.werft.io/load.js';
+}
+?>
+<?php $this->extend('block_searchable'); ?>
+<?php $this->block('content'); ?>
+
+<script src="<?= $url ?>" <?= $categories ?>></script>
+
+<?php $this->endblock(); ?>
