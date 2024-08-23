@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_content']['category_legend'] = 'Kategorien';
+$GLOBALS['TL_LANG']['tl_content']['gutscheinwerft_legend'] = 'Gutscheinwerft';
 
 $GLOBALS['TL_LANG']['tl_content']['gwShopCategories']['0'] = 'Kategorien';
 $GLOBALS['TL_LANG']['tl_content']['gwShopCategories']['1'] = 'Hier können Sie die Anzeige auf bestimmte Kategorien beschränken.';

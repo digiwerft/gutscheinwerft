@@ -23,7 +23,7 @@ $GLOBALS['TL_DCA'][$strTable] = array(
         'gutscheinwerft_pass' => array(
             'label'         => &$GLOBALS['TL_LANG'][$strTable]['gutscheinwerft_pass'],
             'exclude'       => true,
-            'inputType'     => 'text',
+            'inputType'     => 'password',
         ),
         'gutscheinwerft_dev' => array(
             'label'         => &$GLOBALS['TL_LANG'][$strTable]['gutscheinwerft_dev'],

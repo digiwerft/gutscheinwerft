@@ -10,8 +10,8 @@ use Contao\System;
 class GutscheinwerftElement extends ContentElement
 {
     public const TYPE = 'gutscheinwerft';
-    public const PALETTE_DEFAULT = '{type_legend},type;{protected_legend:hide},protected;{invisible_legend:hide},invisible,start,stop';
-    public const PALETTE_CATEGORIES = '{type_legend},type;{category_legend},shopCategories;{protected_legend:hide},protected;{invisible_legend:hide},invisible,start,stop';
+    public const PALETTE_DEFAULT = '{type_legend},type;{gutscheinwerft_legend},gwDevShop;{protected_legend:hide},protected;{invisible_legend:hide},invisible,start,stop';
+    public const PALETTE_CATEGORIES = '{type_legend},type;{gutscheinwerft_legend},gwShopCategories,gwDevShop;{protected_legend:hide},protected;{invisible_legend:hide},invisible,start,stop';
 
     protected $strTemplate = 'ce_' . self::TYPE;
 
