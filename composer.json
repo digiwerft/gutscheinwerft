@@ -5,10 +5,9 @@
     "description": "Integrates the \"Gutscheinwerft\" shop into Contao",
     "authors": [
         {
-            "name": "Ivo Schimani",
-            "email": "ivo.schimani@digiwerft.de",
-            "homepage": "https://www.digiwerft.de",
-            "role": "Project leader"
+            "name": "DIGIWERFT GmbH",
+            "email": "github@digi-werft.de",
+            "homepage": "https://www.digiwerft.de"
         }
     ],
     "keywords": [
