@@ -1,11 +1,13 @@
 <?php
 
+use Contao\DC_File;
+
 $strTable = 'tl_gutscheinwerft_settings';
 
 $GLOBALS['TL_DCA'][$strTable] = array(
 
     'config' => array(
-        'dataContainer'    => 'File'
+        'dataContainer'    => DC_File::class,
     ),
 
     'palettes' => array(
