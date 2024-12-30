@@ -1,5 +1,8 @@
 <?php
-$categories = $this->gwShopCategories ? ' categories="' . implode(",", $this->gwShopCategories) . '"' : '';
+
+use Contao\StringUtil;
+
+$categories = $this->gwShopCategories ? ' categories="' . implode(",", StringUtil::deserialize($this->gwShopCategories)) . '"' : '';
 if ($this->gwDevShop) {
     $url = 'https://gw.server.gutscheinwerft.de/load.js';
 } else {
