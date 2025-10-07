@@ -5,6 +5,7 @@ namespace Digiwerft\Gutscheinwerft\DataContainer;
 use Contao\Config;
 use Digiwerft\Gutscheinwerft\Controller\ApiController\GutscheinwerftApi;
 use Digiwerft\Gutscheinwerft\Controller\ContentElements\GutscheinwerftElement;
+use Contao\StringUtil;
 
 class GutscheinwerftCallback
 {
