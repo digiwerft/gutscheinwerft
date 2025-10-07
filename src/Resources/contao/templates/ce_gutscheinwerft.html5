@@ -3,6 +3,7 @@
 use Contao\StringUtil;
 
 $categories = $this->gwShopCategories ? ' categories="' . implode(",", StringUtil::deserialize($this->gwShopCategories)) . '"' : '';
+$product = $this->gwShopProduct ? ' singleproduct="' . $this->gwShopProduct . '"' : '';
 if ($this->gwDevShop) {
     $url = 'https://gw.server.gutscheinwerft.de/load.js';
 } else {
@@ -12,6 +13,6 @@ if ($this->gwDevShop) {
 <?php $this->extend('block_searchable'); ?>
 <?php $this->block('content'); ?>
 
-<script src="<?= $url ?>" <?= $categories ?>></script>
+<script src="<?= $url ?>" <?= $product != '' ? $product : $categories ?>></script>
 
 <?php $this->endblock(); ?>

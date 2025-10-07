@@ -15,6 +15,18 @@ $GLOBALS['TL_DCA'][$strTable]['fields']['gwShopCategories'] = array(
     'sql'                     => "mediumtext NULL"
 );
 
+$GLOBALS['TL_DCA'][$strTable]['fields']['gwShopProduct'] = array(
+    'label'                   => &$GLOBALS['TL_LANG'][$strTable]['gwShopProduct'],
+    'exclude'                 => true,
+    'inputType'               => 'select',
+    'eval' => array(
+        'mandatory' => false,
+        'tl_class' => 'clr',
+        'includeBlankOption' => true
+    ),
+    'sql'                     => "varchar NOT NULL default ''",
+);
+
 $GLOBALS['TL_DCA'][$strTable]['fields']['gwDevShop'] = [
     'label' => &$GLOBALS['TL_LANG'][$strTable]['gwDevShop'],
     'exclude' => true,

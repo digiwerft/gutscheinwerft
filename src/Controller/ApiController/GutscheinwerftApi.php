@@ -75,4 +75,11 @@ class GutscheinwerftApi
         $response = $this->request($strAPIPath, [], 'GET');
         return $response;
     }
+
+    public function listProducts()
+    {
+        $strAPIPath = '/backoffice/product/list/normal';
+        $response = $this->request($strAPIPath, [], 'GET');
+        return $response->list;
+    }
 }

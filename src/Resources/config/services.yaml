@@ -14,6 +14,12 @@ services:
       - {
           name: contao.callback,
           table: tl_content,
+          target: fields.gwShopProduct.options,
+          method: getProducts,
+        }
+      - {
+          name: contao.callback,
+          table: tl_content,
           target: config.onload,
           method: loadDataContainer,
         }
