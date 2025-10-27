@@ -2,7 +2,7 @@
 
 use Contao\StringUtil;
 
-$categories = $this->gwShopCategories ? ' categories="' . implode(",", StringUtil::deserialize($this->gwShopCategories)) . '"' : '';
+$categories = $this->gwShopCategories ? ' categories="' . implode(" ", StringUtil::deserialize($this->gwShopCategories)) . '"' : '';
 $product = $this->gwShopProduct ? ' singleproduct="' . $this->gwShopProduct . '"' : '';
 if ($this->gwDevShop) {
     $url = 'https://gw.server.gutscheinwerft.de/load.js';
