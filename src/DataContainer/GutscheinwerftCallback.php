@@ -34,7 +34,7 @@ class GutscheinwerftCallback
         } else {
             foreach ($products as $product) {
                 if ($product->category) {
-                    $arrProducts[StringUtil::standardize($product->category) . "/" . StringUtil::standardize($product->name)] = $product->name;
+                    $arrProducts[$product->path] = $product->name;
                 }
             }
         }
